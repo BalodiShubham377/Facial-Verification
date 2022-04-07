@@ -18,3 +18,5 @@ If we just concatenate two examples together and use them as a single input to a
 The output is squashed into [0,1] with a sigmoid function to make it a probability. We use the target t = 1 when the images have the same class and t = 0 for a different class. It’s trained with logistic regression. This means the loss function should be binary cross entropy between the predictions and targets. There is also a L2 weight decay term in the loss to encourage the network to learn smaller/less noisy weights and possibly improve generalization
 
 When it does a one-shot task, the siamese net simply classifies the test image as whatever image in the support set it thinks is most similar to the test image
+
+ 
